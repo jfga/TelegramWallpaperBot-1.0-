@@ -23,7 +23,7 @@ namespace TelegramWallpaperBot_1._0_
         static TelegramBotClient Bot;
         static void Main(string[] args)
         {
-            Bot = new TelegramBotClient("1129795587:AAHpYR9WAbgCEQnB196thVZ0ofxcrSWCJpU") { Timeout = TimeSpan.FromSeconds(10) };
+            Bot = new TelegramBotClient("The key") { Timeout = TimeSpan.FromSeconds(10) };
             var me = Bot.GetMeAsync().Result;
 
             Bot.OnCallbackQuery += Bot_OnCallbackQueryReseived;
